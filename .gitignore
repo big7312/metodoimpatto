@@ -1,0 +1,57 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# WordPress local config and secrets
+wp-config.php
+.env
+.env.*
+!.env.example
+
+# WordPress core managed locally, not versioned in this project repo
+/.htaccess
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
+
+# Track only the custom Metodo IMPATTO theme inside wp-content
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/metodo-impatto/
+!/wp-content/themes/metodo-impatto/**
+
+# Uploads and generated media
+wp-content/uploads/
+wp-content/upgrade/
+
+# Logs, cache, backups
+*.log
+error_log
+debug.log
+cache/
+tmp/
+temp/
+backup/
+backups/
+*.sql
+*.sqlite
+*.sqlite3
+
+# Build or package artifacts
+node_modules/
+vendor/
+dist/
+build/
+
+# Local verification artifacts
+artifacts/

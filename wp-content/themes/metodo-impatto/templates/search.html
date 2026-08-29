@@ -1,0 +1,27 @@
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|m","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--m);margin-bottom:var(--wp--preset--spacing--xl)">
+	<!-- wp:query-title {"type":"search"} /-->
+	<!-- wp:search {"label":"Cerca","showLabel":false,"buttonText":"Cerca","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+	<!-- wp:query {"query":{"inherit":true},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"layout":{"type":"list"}} -->
+			<!-- wp:group {"className":"mi-post-card","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group mi-post-card">
+				<!-- wp:post-title {"isLink":true} /-->
+				<!-- wp:post-excerpt /-->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph -->
+			<p>Non ho trovato nulla con questa ricerca. Prova un termine piu semplice oppure torna agli articoli.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer"} /-->
+

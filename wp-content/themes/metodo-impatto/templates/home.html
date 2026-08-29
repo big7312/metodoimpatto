@@ -1,0 +1,64 @@
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|m","bottom":"var:preset|spacing|xl"},"blockGap":"var:preset|spacing|m"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--m);margin-bottom:var(--wp--preset--spacing--xl)">
+	<!-- wp:group {"className":"mi-section-intro","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group mi-section-intro">
+		<!-- wp:paragraph {"className":"mi-kicker"} -->
+		<p class="mi-kicker">Articoli</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"level":1} -->
+		<h1>Articoli, appunti e verifiche su AI e processi di lavoro.</h1>
+		<!-- /wp:heading -->
+		<!-- wp:paragraph -->
+		<p>Il blog parte senza fretta: quando pubblico, voglio che ogni contenuto sia utile, leggibile e collegato a un problema concreto.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:search {"label":"Cerca negli articoli","showLabel":false,"buttonText":"Cerca","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+
+	<!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"className":"mi-post-card","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group mi-post-card">
+				<!-- wp:post-terms {"term":"category","separator":" ","className":"mi-tax-chip"} /-->
+				<!-- wp:post-title {"isLink":true,"fontSize":"l"} /-->
+				<!-- wp:post-excerpt {"excerptLength":25} /-->
+				<!-- wp:read-more {"content":"Leggi l'articolo","fontSize":"s"} /-->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:group {"className":"mi-archive-empty","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group mi-archive-empty">
+				<!-- wp:paragraph {"className":"mi-kicker"} -->
+				<p class="mi-kicker">Blog vuoto, progetto attivo</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":2} -->
+				<h2>Gli articoli arriveranno progressivamente.</h2>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph -->
+				<p>Sto costruendo la base editoriale del progetto. Nel frattempo puoi leggere il metodo o iscriverti alla newsletter per ricevere i primi contenuti quando saranno pronti.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:shortcode -->
+				[mi_page_link slug="il-metodo-impatto"]Scopri il metodo[/mi_page_link]
+				<!-- /wp:shortcode -->
+				<!-- wp:shortcode -->
+				[mi_page_link slug="newsletter" variant="outline"]Vai alla newsletter[/mi_page_link]
+				<!-- /wp:shortcode -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:query-no-results -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+	</div>
+	<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer"} /-->
