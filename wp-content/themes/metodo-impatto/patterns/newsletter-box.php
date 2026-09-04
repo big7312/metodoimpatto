@@ -8,17 +8,24 @@
  * @package MetodoImpatto
  */
 ?>
-<!-- wp:group {"className":"mi-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group mi-card">
+<!-- wp:group {"className":"mi-newsletter-editorial","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mi-newsletter-editorial">
 	<!-- wp:paragraph {"className":"mi-kicker"} -->
-	<p class="mi-kicker">Newsletter</p>
+	<p class="mi-kicker">Il Prompt della Settimana</p>
 	<!-- /wp:paragraph -->
 	<!-- wp:heading {"level":2} -->
-	<h2>Ti mando solo contenuti che aiutano a leggere meglio il lavoro e l'uso concreto dell'AI.</h2>
+	<h2>AI meno rumorosa, piu utile.</h2>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
-	<p>La newsletter e il luogo in cui seguo piu da vicino il progetto: idee, verifiche, errori da evitare e criteri per usare l'AI senza perdersi negli strumenti.</p>
+	<p>Una mail breve ogni venerdi: un caso reale, un prompt commentato e una domanda per capire se l'AI sta davvero aiutando il lavoro.</p>
 	<!-- /wp:paragraph -->
+	<!-- wp:html -->
+	<ul class="mi-newsletter-bullets">
+		<li><strong>1 prompt</strong><span>da copiare, adattare e capire.</span></li>
+		<li><strong>1 caso</strong><span>per vedere dove il metodo regge.</span></li>
+		<li><strong>1 criterio</strong><span>per scegliere meglio il prossimo test.</span></li>
+	</ul>
+	<!-- /wp:html -->
 	<!-- wp:shortcode -->
 	[mi_newsletter]
 	<!-- /wp:shortcode -->

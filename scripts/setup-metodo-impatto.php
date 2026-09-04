@@ -85,7 +85,7 @@ $pages = array(
 		<!-- wp:group {"className":"mi-cta-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
 		<div class="wp-block-group mi-cta-row">
 			<!-- wp:shortcode -->
-			[mi_page_link slug="newsletter"]Iscriviti alla newsletter[/mi_page_link]
+			[mi_page_link slug="newsletter"]Ricevi il Prompt della Settimana[/mi_page_link]
 			<!-- /wp:shortcode -->
 			<!-- wp:shortcode -->
 			[mi_page_link slug="il-metodo-impatto" variant="outline"]Leggi il metodo[/mi_page_link]
@@ -515,47 +515,36 @@ HTML
 HTML
 		),
 		'newsletter'                   => array(
-			'title'   => 'Newsletter',
+			'title'   => 'Il Prompt della Settimana',
 			'order'   => 7,
 			'content' => <<<'HTML'
-<!-- wp:group {"className":"mi-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group mi-card">
+<!-- wp:group {"align":"wide","className":"mi-newsletter-page","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mi-newsletter-page">
 	<!-- wp:paragraph {"className":"mi-kicker"} -->
-	<p class="mi-kicker">Newsletter</p>
+	<p class="mi-kicker">Il Prompt della Settimana</p>
 	<!-- /wp:paragraph -->
 	<!-- wp:heading {"level":1} -->
-	<h1>Newsletter</h1>
+	<h1>Una mail breve da tenere aperta mentre lavori.</h1>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
-	<p>La newsletter e il canale principale del progetto. La usero per condividere riflessioni pratiche, verifiche, criteri di scelta e idee utili per applicare l'AI con piu metodo nel lavoro quotidiano.</p>
+	<p>AI meno rumorosa, piu utile. Ogni venerdi ricevi un esempio pratico per usare l'AI in modo piu lucido: cosa chiedere, cosa evitare, come valutare il risultato.</p>
 	<!-- /wp:paragraph -->
-	<!-- wp:list -->
-	<ul>
-		<li>cosa osservare prima di scegliere uno strumento;</li>
-		<li>come testare un processo senza improvvisare;</li>
-		<li>errori frequenti da evitare;</li>
-		<li>applicazioni concrete in marketing, vendite e organizzazione del lavoro.</li>
-	</ul>
-	<!-- /wp:list -->
-	<!-- wp:paragraph -->
-	<p>Non prometto una frequenza precisa finche non avro definito un ritmo sostenibile. Quando il modulo Brevo sara configurato, l'iscrizione usera double opt-in e consenso privacy separato.</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:group {"className":"mi-newsletter-fallback","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group mi-newsletter-fallback">
-		<!-- wp:paragraph {"className":"mi-eyebrow"} -->
-		<p class="mi-eyebrow">Iscrizione</p>
-		<!-- /wp:paragraph -->
-		<!-- wp:heading {"level":2} -->
-		<h2>La struttura e pronta, il modulo verra collegato a Brevo dopo la configurazione finale.</h2>
-		<!-- /wp:heading -->
-		<!-- wp:paragraph -->
-		<p>Finche il modulo non e configurato, questa pagina mostra un fallback editoriale per chiarire struttura, consenso e flusso previsto.</p>
-		<!-- /wp:paragraph -->
-		<!-- wp:shortcode -->
-		[mi_newsletter]
-		<!-- /wp:shortcode -->
+
+	<!-- wp:html -->
+	<div class="mi-newsletter-manifesto">
+		<div><strong>Un prompt commentato</strong><span>non solo da copiare: da capire e adattare al tuo contesto.</span></div>
+		<div><strong>Un caso operativo</strong><span>marketing, vendite, organizzazione o contenuti, sempre collegato a un processo reale.</span></div>
+		<div><strong>Una domanda scomoda</strong><span>per distinguere automazione utile, entusiasmo momentaneo e lavoro fatto meglio.</span></div>
 	</div>
-	<!-- /wp:group -->
+	<!-- /wp:html -->
+
+	<!-- wp:paragraph -->
+	<p>Niente spam, niente raccolte infinite di tool. Solo strumenti, metodo e casi pratici. Quando Brevo sara configurato, l'iscrizione usera double opt-in e consenso privacy separato.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:shortcode -->
+	[mi_newsletter]
+	<!-- /wp:shortcode -->
 </div>
 <!-- /wp:group -->
 HTML

@@ -263,9 +263,14 @@ function mi_get_newsletter_markup() {
 	ob_start();
 	?>
 	<div class="mi-newsletter-fallback" aria-live="polite">
-		<p class="mi-eyebrow"><?php esc_html_e( 'Newsletter in preparazione', 'metodo-impatto' ); ?></p>
-		<h3><?php esc_html_e( 'La struttura e pronta, il modulo verra collegato a Brevo dopo la configurazione finale.', 'metodo-impatto' ); ?></h3>
-		<p><?php esc_html_e( 'Qui andra il modulo di iscrizione con double opt-in, consenso privacy separato e messaggi accessibili di conferma o errore.', 'metodo-impatto' ); ?></p>
+		<p class="mi-eyebrow"><?php esc_html_e( 'Il Prompt della Settimana', 'metodo-impatto' ); ?></p>
+		<h3><?php esc_html_e( 'Una mail breve da tenere aperta mentre lavori.', 'metodo-impatto' ); ?></h3>
+		<p><?php esc_html_e( 'Ogni venerdi: un caso reale, un prompt commentato e una domanda per capire se l\'AI sta davvero aiutando il processo.', 'metodo-impatto' ); ?></p>
+		<div class="mi-newsletter-rhythm" aria-label="<?php esc_attr_e( 'Cosa riceverai', 'metodo-impatto' ); ?>">
+			<span><?php esc_html_e( 'Prompt commentati', 'metodo-impatto' ); ?></span>
+			<span><?php esc_html_e( 'Mini-casi operativi', 'metodo-impatto' ); ?></span>
+			<span><?php esc_html_e( 'Checklist leggere', 'metodo-impatto' ); ?></span>
+		</div>
 		<form class="mi-newsletter-shell" action="#" method="post">
 			<p>
 				<label for="mi-newsletter-email"><?php esc_html_e( 'Email', 'metodo-impatto' ); ?></label>
@@ -280,10 +285,10 @@ function mi_get_newsletter_markup() {
 				<label for="mi-newsletter-consent"><?php esc_html_e( 'Acconsento al trattamento dei dati secondo l\'informativa privacy.', 'metodo-impatto' ); ?></label>
 			</p>
 			<p class="mi-newsletter-actions">
-				<button type="submit" disabled><?php esc_html_e( 'Modulo da configurare', 'metodo-impatto' ); ?></button>
+				<button type="submit" disabled><?php esc_html_e( 'Ricevi il prossimo prompt', 'metodo-impatto' ); ?></button>
 			</p>
 		</form>
-		<p class="mi-small-note"><?php esc_html_e( 'La configurazione tecnica non salva i contatti nel database WordPress.', 'metodo-impatto' ); ?></p>
+		<p class="mi-small-note"><?php esc_html_e( 'Placeholder pronto per Brevo: double opt-in, consenso privacy e nessun salvataggio marketing nel database WordPress.', 'metodo-impatto' ); ?></p>
 	</div>
 	<?php
 	return (string) ob_get_clean();
