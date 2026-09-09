@@ -55,3 +55,6 @@ build/
 
 # Local verification artifacts
 artifacts/
+
+# Separate static rebuild project
+metodoimpatto-astro/
